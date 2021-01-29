@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Todoリスト</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container is-max-desktop content">
+        <h1 class="title">Task List</h1>
+        <article class="message is-dark">
+          <div class="message-body">
+            &copy; DAFU <a href="https://twitter.com/@kikiriko200" class="has-text-link">Twitter</a>
+          </div>
+        </article>
+        <form id="form" action="#">
+          <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input id="taskName" class="input" type="text" />
+            </p>
+            <button type="submit" id="addTask" class="button is-info">タスクの追加</button>
+          </div>
+        </form>
+        <button id="createURL" onclick="createURL();" class="button is-primary">URL作成</button>
+
+        <ul id="contents" class="list is-circle"></ul>
+
+        <p class="input" id="url" readonly></p>
+        <a href="#" id="link">
+          <button class="button is-info is-medium is-fullwidth">Tweet</button>
+        </a>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
